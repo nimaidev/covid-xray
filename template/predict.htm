@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Predict</title>
+    <style>
+        #heading
+        {
+            font-weight: bolder;
+        }
+        .card-title
+        {
+            font-weight: bolder;
+            margin-top: 15px;
+
+        }
+        body
+        {
+            background-color: #00021A;
+        }
+
+        h1, h2, h3, #aaa
+        {
+            color: aliceblue;
+        }
+        h1{
+            font-size: 40pt;
+        }
+        h2{
+            font-size: 20pt;
+        }
+        h3{
+            font-size: 15pt;
+        }
+        span
+        {
+            color: wheat;
+        }
+        #ttt
+        {
+            color: #00021A;
+        }
+    </style>
+</head>
+<body>
+    <nav class="text-center ">
+        <h1 id='heading'>ସାରଥୀ  </h1>
+        <h2>ଆପଣଙ୍କ ଓଡ଼ିଆ ବନ୍ଧୁ </h2>
+        <h3>Proudly Made in Odisha </h3><br><br>
+    </nav>
+    <div class="card text-center" style="width: 400px; background-color:{{color}}; margin:auto;">
+        <p id="ttt">Predicting : {{url}}</p>
+        <img src="{{url}}" alt="image here" height="300px" width="300px" style="margin: auto;"><br>
+        <a href="{{url }}" class="btn btn-primary" style="width: 200px; margin:auto;">View X-ray in Full Screen</a><br>
+        <h2 id="ttt">COVID-19 Status: <span>{{result}}</span></h2><br><br>
+    </div>
+</body>
+</html><br>
+<footer style="color: blue; background-color:aqua"><center><b>All Rights Reserved @ Utkal University, Vani Bihar, Bhubaneswar, Odisha</b></center></footer>

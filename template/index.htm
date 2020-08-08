@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Saathi | Covid Companion</title>
+    <style>
+        #heading
+        {
+            font-weight: bolder;
+        }
+        .card-title
+        {
+            font-weight: bolder;
+            margin-top: 15px;
+
+        }
+        body
+        {
+            background-color: #00021A;
+        }
+
+        h1, h2, h3, #aaa
+        {
+            color: aliceblue;
+        }
+        h1{
+            font-size: 40pt;
+        }
+        h2{
+            font-size: 20pt;
+        }
+        h3{
+            font-size: 15pt;
+        }
+        .row{
+            margin: 10px auto;
+            padding: 20px;
+        }
+        .column{
+            margin: auto ;
+        }
+    </style>
+</head>
+<body bgcolor="#010542">
+    <nav class="text-center ">
+        <h1 id='heading'>ସାରଥୀ  </h1>
+        <h2>ଆପଣଙ୍କ ଓଡ଼ିଆ ବନ୍ଧୁ </h2>
+        <h3>Proudly Made in Odisha </h3><br><br>
+    </nav>
+    
+    <div class="card card-primary text-center jumbotron" style="width: 500px; padding:10px; margin:auto">
+        <form method="POST" action="predict" enctype="multipart/form-data">
+            {% csrf_token %}
+            <img src="https://media3.giphy.com/media/dVuyBgq2z5gVBkFtDc/giphy.gif" alt="giphy" width="95%">
+            <p class="card-title ">Upload Your Xray here:  </p>
+            <input type="file" name="xray" class="card-text"><br>
+            <input type="submit" class="btn btn-primary" value="Upload Image" style="margin: 10px;">
+        </form>
+    </div><br><br>
+    <div class='text-center ' id="abt">
+        <h2><u>About</u></h2>
+        <p id="aaa">Proudly Developed By</p>
+        <div class="row">
+            <div class="column">
+              <div class="card" style="width: 400px;">
+                  <br>
+                  <img src="https://scontent.fhyd6-1.fna.fbcdn.net/v/t1.0-9/31542934_2113352842217716_2352041416911224832_o.jpg?_nc_cat=108&_nc_sid=174925&_nc_ohc=_uJV0ZQQPb4AX9i_c7w&_nc_ht=scontent.fhyd6-1.fna&oh=91edb3b55aaed6733ed22a95215db0f8&oe=5F126CAD" alt="anwesha" height="300px" width="300px" style="margin: auto;">
+                  <p class="card-title">Anwesha Singh</p>
+                  <p class="card-text">PG Dept. Of C.S</p>
+                  <p class="card-text">Roll No: <b>15130V184008</b></p>
+                  <p class="card-text"><b>Utkal University, Bhubaneswar</b></p>
+                  <br>
+              </div>
+            </div>
+            <div class="column">
+                <div class="card" style="width: 400px;">
+                    <br>
+                    <img src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/6620618271548234969-512.png" alt="anwesha" height="300px" width="300px" style="margin: auto;">
+                    <p class="card-title">Tilotama Dehury</p>
+                    <p class="card-text">PG Dept. Of C.S</p>
+                    <p class="card-text">Roll No: <b>15130V184008</b></p>
+                    <p class="card-text"><b>Utkal University, Bhubaneswar</b></p>
+                    <br>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+    </div>
+</body>
+</html>
+<footer style="color: blue; background-color:aqua"><center><b>All Rights Reserved @ Utkal University, Vani Bihar, Bhubaneswar, Odisha</b></center></footer>
