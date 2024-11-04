@@ -1,6 +1,4 @@
-Based on the information gathered, here is a draft for the README.md file for the `nimaidev/covid-xray` project. Since there was no existing README file found and the file listing endpoint is not supported, the draft is created based on available repository details:
 
-```markdown
 # COVID-XRay
 
 A project for analyzing X-ray images for COVID-19 detection using machine learning.
